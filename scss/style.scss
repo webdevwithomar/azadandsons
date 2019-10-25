@@ -1,0 +1,16 @@
+/**************************************
+Variables and Imports
+**************************************/
+
+$primary-color: #f44336;
+
+@import './bootstrap';
+
+/**************************************
+Custom Styles
+**************************************/
+
+// navbar
+.nav-custom {
+  box-shadow: 0 .5rem 1.5rem rgba($black, 0.2);
+}
