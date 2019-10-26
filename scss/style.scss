@@ -1,16 +1,37 @@
 /**************************************
-Variables and Imports
+Variables, Mixins and Imports
 **************************************/
 
-$primary-color: #f44336;
+$primary-color: darken(#f44336, 5%);
+$primary-color-dark: darken(#f44336, 10%);
+$primary-color-darker: darken(#f44336, 15%);
 
 @import './bootstrap';
+
+
 
 /**************************************
 Custom Styles
 **************************************/
 
+// typography
+.p-dark {
+  color: $primary-color-dark;
+}
+
+.p-darker {
+  color: $primary-color-darker
+}
+
 // navbar
 .nav-custom {
-  box-shadow: 0 .5rem 1.5rem rgba($black, 0.2);
+  font-weight: $font-weight-bold;
+}
+
+// carousel
+.carousel-custom {
+  height: 70vh;
+  background-image: linear-gradient(to right, rgba($black, 0.8), rgba($black, 0.8)), url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
