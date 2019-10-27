@@ -1,14 +1,17 @@
 {
   "name": "azadandsons",
   "version": "1.0.0",
-  "description": "A website for a business",
+  "description": "Website for a business",
   "main": "index.js",
   "scripts": {
-    "watch:scss": "node-sass -w scss/style.scss css/style.css"
+    "watch:scss": "node-sass -w scss/style.scss css/style.css",
+    "concat:css": "concat -o css/style.concat.css css/lightbox.min.css css/lightslider.min.css css/style.css",
+    "concat:js": "concat -o js/script.concat.js js/jquery.min.js js/bootstrap.min.js js/lightbox.min.js js/lightslider.min.js"
   },
   "author": "Omar Faruque",
   "license": "ISC",
   "devDependencies": {
+    "concat": "^1.0.3",
     "node-sass": "^4.13.0"
   }
 }
